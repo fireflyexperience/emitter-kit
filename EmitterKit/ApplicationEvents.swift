@@ -8,10 +8,14 @@
 
 import UIKit
 
+public typealias LaunchOptions = [NSObject: AnyObject]?
+
 public class ApplicationEvents {
-    public static let eventApplicationWillResignActive = Event<UIApplication>()
-    public static let eventApplicationDidEnterBackground = Event<UIApplication>()
-    public static let eventApplicationWillEnterForeground = Event<UIApplication>()
-    public static let eventApplicationDidBecomeActive = Event<UIApplication>()
-    public static let eventApplicationWillTerminate = Event<UIApplication>()
+    public static let willResignActive = Event<UIApplication>()
+    public static let didEnterBackground = Event<UIApplication>()
+    public static let willEnterForeground = Event<UIApplication>()
+    public static let didBecomeActive = Event<UIApplication>()
+    public static let willTerminate = Event<UIApplication>()
+    
+    public static let didFinishLaunchingWithOptions = Event<LaunchOptions>()
 }
