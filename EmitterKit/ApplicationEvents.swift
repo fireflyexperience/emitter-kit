@@ -8,12 +8,10 @@
 
 import UIKit
 
-class ApplicationEvents {
-    static let shared = ApplicationEvents()
-    
-    let eventApplicationWillResignActive = Event<UIApplication>()
-    let eventApplicationDidEnterBackground = Event<UIApplication>()
-    let eventApplicationWillEnterForeground = Event<UIApplication>()
-    let eventApplicationDidBecomeActive = Event<UIApplication>()
-    let eventApplicationWillTerminate = Event<UIApplication>()
+public class ApplicationEvents {
+    public static let eventApplicationWillResignActive = Event<UIApplication>()
+    public static let eventApplicationDidEnterBackground = Event<UIApplication>()
+    public static let eventApplicationWillEnterForeground = Event<UIApplication>()
+    public static let eventApplicationDidBecomeActive = Event<UIApplication>()
+    public static let eventApplicationWillTerminate = Event<UIApplication>()
 }
