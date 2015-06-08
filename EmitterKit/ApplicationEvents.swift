@@ -26,6 +26,16 @@ public enum EKLogLevel {
     case Info(EKLogEvent)
     case Warning(EKLogEvent)
     case Error(EKLogEvent)
+    
+    public func event() -> EKLogEvent {
+        switch self {
+        case .Verbose(let event): return event
+        case .Debug(let event)  : return event
+        case .Info(let event)   : return event
+        case .Warning(let event): return event
+        case .Error(let event)  : return event
+        }
+    }
 }
 
 public typealias LaunchOptions = [NSObject: AnyObject]?
