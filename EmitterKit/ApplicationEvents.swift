@@ -8,6 +8,26 @@
 
 import UIKit
 
+public struct EKLogEvent {
+    var message: String
+    var file: String
+    var line: Int
+    
+    public init(_ message: String, file: String = __FILE__, line: Int = __LINE__) {
+        self.message = message
+        self.file = file
+        self.line = line
+    }
+}
+
+public enum EKLogLevel {
+    case Verbose(EKLogEvent)
+    case Debug(EKLogEvent)
+    case Info(EKLogEvent)
+    case Warning(EKLogEvent)
+    case Error(EKLogEvent)
+}
+
 public typealias LaunchOptions = [NSObject: AnyObject]?
 
 public class ApplicationEvents {
@@ -21,5 +41,5 @@ public class ApplicationEvents {
     public static let registered = Event<(UIApplication, NSData)>()
     public static let launchComplete = Signal()
     
-    public static let log = Event<String>()
+    public static let log = Event<EKLogEvent>()
 }
