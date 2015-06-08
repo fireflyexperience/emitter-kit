@@ -41,5 +41,5 @@ public class ApplicationEvents {
     public static let registered = Event<(UIApplication, NSData)>()
     public static let launchComplete = Signal()
     
-    public static let log = Event<EKLogEvent>()
+    public static let log = Event<EKLogLevel>()
 }
