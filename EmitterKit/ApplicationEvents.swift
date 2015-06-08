@@ -12,5 +12,10 @@ public class ApplicationEvents {
     public static let registered = Event<(UIApplication, NSData)>()
     public static let launchComplete = Signal()
     
-    public static let log = Event<EKLogLevel>()
+    public static let log = Event<EKLogEvent>()
+    
+    public static func log(level: EKLogLevel, message: String, file: String = __FILE__, line: Int = __LINE__) {
+        let event = EKLogEvent(level: level, message: message, file: file, line: line)
+        self.log.emit(event)
+    }
 }
