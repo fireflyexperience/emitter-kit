@@ -9,9 +9,9 @@
 import UIKit
 
 public struct EKLogEvent {
-    var message: String
-    var file: String
-    var line: Int
+    public var message: String
+    public var file: String
+    public var line: Int
     
     public init(_ message: String, file: String = __FILE__, line: Int = __LINE__) {
         self.message = message
