@@ -30,6 +30,8 @@
 		11E48E471B48CF730094741B /* ChangeListenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E48E431B48CF730094741B /* ChangeListenerTests.swift */; };
 		11F4760E19CC1DA500831EE5 /* Helpers.swift in Headers */ = {isa = PBXBuildFile; fileRef = 11F4760D19CC1DA500831EE5 /* Helpers.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		11FCD69319CA175C006B6D44 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FCD69219CA175C006B6D44 /* Signal.swift */; };
+		B81F8D9F1BA5DD1600329CE1 /* ApplicationEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8D9D1BA5DD1600329CE1 /* ApplicationEvents.swift */; settings = {ASSET_TAGS = (); }; };
+		B81F8DA01BA5DD1600329CE1 /* EKLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8D9E1BA5DD1600329CE1 /* EKLog.swift */; settings = {ASSET_TAGS = (); }; };
 		CEB7AFFD1B11F01D007888F7 /* EmitterKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CEB7AFFC1B11F01D007888F7 /* EmitterKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,8 @@
 		11E48E431B48CF730094741B /* ChangeListenerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangeListenerTests.swift; path = ../tests/ChangeListenerTests.swift; sourceTree = "<group>"; };
 		11F4760D19CC1DA500831EE5 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		11FCD69219CA175C006B6D44 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		B81F8D9D1BA5DD1600329CE1 /* ApplicationEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationEvents.swift; sourceTree = "<group>"; };
+		B81F8D9E1BA5DD1600329CE1 /* EKLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKLog.swift; sourceTree = "<group>"; };
 		CEB7AFFC1B11F01D007888F7 /* EmitterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmitterKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +162,8 @@
 		11F4760F19CC211600831EE5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B81F8D9D1BA5DD1600329CE1 /* ApplicationEvents.swift */,
+				B81F8D9E1BA5DD1600329CE1 /* EKLog.swift */,
 				11F4760D19CC1DA500831EE5 /* Helpers.swift */,
 			);
 			name = Helpers;
@@ -283,6 +289,7 @@
 			files = (
 				117CC8A519CC37DF00A57695 /* Helpers.swift in Sources */,
 				1102852F19C9BD420069F253 /* Event.swift in Sources */,
+				B81F8DA01BA5DD1600329CE1 /* EKLog.swift in Sources */,
 				1102853319C9BD6B0069F253 /* NotificationListener.swift in Sources */,
 				1102853619C9BED90069F253 /* Emitter.swift in Sources */,
 				1102853519C9BD720069F253 /* ChangeListener.swift in Sources */,
@@ -290,6 +297,7 @@
 				11FCD69319CA175C006B6D44 /* Signal.swift in Sources */,
 				1102853119C9BD600069F253 /* EmitterListener.swift in Sources */,
 				1102854019C9DC4F0069F253 /* Notification.swift in Sources */,
+				B81F8D9F1BA5DD1600329CE1 /* ApplicationEvents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
