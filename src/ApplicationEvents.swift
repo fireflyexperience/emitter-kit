@@ -20,4 +20,10 @@ public class ApplicationEvents {
         let event = EKLogEvent(level: level, message: message, file: file, line: line)
         self.log.emit(event)
     }
+    
+    public static func log(level: EKLogLevel, error: NSError, file: String = __FILE__, line: Int = __LINE__) {
+        let message = "\(error.domain)(\(error.code)): \(error.description), \(error.debugDescription)"
+        let event = EKLogEvent(level: level, message: message, file: file, line: line)
+        self.log.emit(event)
+    }
 }
