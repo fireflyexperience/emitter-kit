@@ -3,6 +3,10 @@ import UIKit
 
 public typealias LaunchOptions = [NSObject: AnyObject]?
 
+public func EKError(error: NSError, file: String = __FILE__, line: Int = __LINE__) {
+    ApplicationEvents.log(.Error, error: error)
+}
+
 public class ApplicationEvents {
     public static let willResignActive = Event<UIApplication>()
     public static let didEnterBackground = Event<UIApplication>()
