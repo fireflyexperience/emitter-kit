@@ -4,7 +4,7 @@ import UIKit
 public typealias LaunchOptions = [NSObject: AnyObject]?
 
 public func EKError(error: NSError, file: String = __FILE__, line: Int = __LINE__) {
-    ApplicationEvents.log(.Error, error: error)
+    ApplicationEvents.log(.Error, error: error, file: file, line: line)
 }
 
 public class ApplicationEvents {
