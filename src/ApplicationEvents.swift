@@ -4,11 +4,11 @@ import UIKit
 public typealias LaunchOptions = [NSObject: AnyObject]?
 
 @objc public class EMKLog: NSObject {
-    public func Error(error: NSError, file: String = __FILE__, line: Int = __LINE__) {
+    public class func Error(error: NSError, file: String = __FILE__, line: Int = __LINE__) {
         ApplicationEvents.log(.Error, error: error, file: file, line: line)
     }
     
-    public func Log(level: String, message: String, file: String = __FILE__, line: Int = __LINE__) {
+    public class func Log(level: String, message: String, file: String = __FILE__, line: Int = __LINE__) {
         if let lvl = EKLogLevel(rawValue: level) {
             ApplicationEvents.log(lvl, message: message, file: file, line: line)
         }
