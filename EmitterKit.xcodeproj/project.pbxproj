@@ -30,8 +30,8 @@
 		11E48E471B48CF730094741B /* ChangeListenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E48E431B48CF730094741B /* ChangeListenerTests.swift */; };
 		11F4760E19CC1DA500831EE5 /* Helpers.swift in Headers */ = {isa = PBXBuildFile; fileRef = 11F4760D19CC1DA500831EE5 /* Helpers.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		11FCD69319CA175C006B6D44 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FCD69219CA175C006B6D44 /* Signal.swift */; };
-		B81F8D9F1BA5DD1600329CE1 /* ApplicationEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8D9D1BA5DD1600329CE1 /* ApplicationEvents.swift */; settings = {ASSET_TAGS = (); }; };
-		B81F8DA01BA5DD1600329CE1 /* EKLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8D9E1BA5DD1600329CE1 /* EKLog.swift */; settings = {ASSET_TAGS = (); }; };
+		B81F8D9F1BA5DD1600329CE1 /* ApplicationEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8D9D1BA5DD1600329CE1 /* ApplicationEvents.swift */; };
+		B81F8DA01BA5DD1600329CE1 /* EKLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8D9E1BA5DD1600329CE1 /* EKLog.swift */; };
 		CEB7AFFD1B11F01D007888F7 /* EmitterKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CEB7AFFC1B11F01D007888F7 /* EmitterKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -326,6 +326,7 @@
 		1102852619C9BCEB0069F253 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -352,6 +353,7 @@
 		1102852719C9BCEB0069F253 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
